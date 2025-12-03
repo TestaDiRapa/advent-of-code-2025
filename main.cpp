@@ -1,5 +1,6 @@
 #include <iostream>
 #include "day_1/day_1.h"
+#include "day_2/day_2.h"
 
 int main(int argc, char* argv[]){
     bool verbose {false};
@@ -15,6 +16,9 @@ int main(int argc, char* argv[]){
     switch(day) {
         case 1:
             day_1(verbose);
+            break;
+        case 2:
+            day_2(verbose);
             break;
         default:
             std::cout << "Day " << day << " not solved yet" << std::endl;
