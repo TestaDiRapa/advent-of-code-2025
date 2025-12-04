@@ -1,0 +1,1 @@
+void day_3(bool verbose);
