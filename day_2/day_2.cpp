@@ -94,9 +94,9 @@ unsigned long long int sum_invalid_ids_repeated(unsigned long long int from, uns
     return invalid_ids_sum;
 }
 
-void day_2(bool verbose) {
+void day_2(std::string input_file_name, bool verbose) {
     std::vector<std::string> lines;
-    read_file("day_2/input", lines);
+    read_file(input_file_name, lines);
 
     std::vector<std::string> bounds;
     split_into(lines[0], ',', bounds);

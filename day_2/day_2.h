@@ -1,1 +1,3 @@
-void day_2(bool verbose);
+#include<string>
+
+void day_2(std::string input_file_name, bool verbose);

@@ -51,9 +51,9 @@ int accessible_rolls_iterative(std::vector<std::string> grid, bool verbose) {
     return rolls_removed;
 }
 
-void day_4(bool verbose) {
+void day_4(std::string input_file_name, bool verbose) {
     std::vector<std::string> grid;
-    read_file("day_4/input", grid);
+    read_file(input_file_name, grid);
 
     size_t part_1 {accessible_rolls(grid).size()};
     std::cout << "The rolls with < 4 adjacent rolls are: " << part_1 << std::endl;

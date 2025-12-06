@@ -39,9 +39,9 @@ unsigned long long int max_joltage(std::vector<std::vector<int>> banks, int size
     return joltage;
 }
 
-void day_3(bool verbose) {
+void day_3(std::string input_file_name, bool verbose) {
     std::vector<std::string> lines;
-    read_file("day_3/input", lines);
+    read_file(input_file_name, lines);
 
     std::vector<std::vector<int>> banks;
     banks.resize(lines.size());

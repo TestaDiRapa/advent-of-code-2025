@@ -3,13 +3,14 @@
 #include "day_2/day_2.h"
 #include "day_3/day_3.h"
 #include "day_4/day_4.h"
+#include "day_5/day_5.h"
 
 int main(int argc, char* argv[]){
     bool verbose {false};
     int day;
-
-    if (argc >= 2) {
-        std::string arg = argv[1];
+    std::string input_file_name {argv[1]};
+    if (argc >= 3) {
+        std::string arg = argv[2];
         verbose = arg == "true";
     } 
 
@@ -17,16 +18,19 @@ int main(int argc, char* argv[]){
     std::cin >> day;
     switch(day) {
         case 1:
-            day_1(verbose);
+            day_1(input_file_name, verbose);
             break;
         case 2:
-            day_2(verbose);
+            day_2(input_file_name, verbose);
             break;
         case 3:
-            day_3(verbose);
+            day_3(input_file_name, verbose);
             break;
         case 4:
-            day_4(verbose);
+            day_4(input_file_name, verbose);
+            break;
+        case 5:
+            day_5(input_file_name, verbose);
             break;
         default:
             std::cout << "Day " << day << " not solved yet" << std::endl;

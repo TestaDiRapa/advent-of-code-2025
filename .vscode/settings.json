@@ -41,6 +41,11 @@
         "string_view": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "__tree": "cpp",
+        "set": "cpp",
+        "unordered_map": "cpp"
     }
 }

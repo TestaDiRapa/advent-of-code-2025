@@ -53,9 +53,9 @@ void find_pwd_using_click_method(std::vector<std::string> lines, bool verbose) {
     std::cout << "The password with the 0x434C49434B method is: " << count_0 << std::endl;
 }
 
-void day_1(bool verbose) {
+void day_1(std::string input_file_name, bool verbose) {
     std::vector<std::string> lines;
-    read_file("day_1/input", lines);
+    read_file(input_file_name, lines);
     find_pwd_using_standard_method(lines, verbose);
     find_pwd_using_click_method(lines, verbose);
 }
