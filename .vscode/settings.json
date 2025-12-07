@@ -46,6 +46,7 @@
         "__split_buffer": "cpp",
         "__tree": "cpp",
         "set": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "regex": "cpp"
     }
 }
