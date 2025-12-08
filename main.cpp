@@ -5,6 +5,7 @@
 #include "day_4/day_4.h"
 #include "day_5/day_5.h"
 #include "day_6/day_6.h"
+#include "day_7/day_7.h"
 
 int main(int argc, char* argv[]){
     bool verbose {false};
@@ -36,8 +37,11 @@ int main(int argc, char* argv[]){
         case 6:
             day_6(input_file_name, verbose);
             break;
+        case 7:
+            day_7(input_file_name, verbose);
+            break;
         default:
-            std::cout << "Day " << day << " not solved yet" << std::endl;
+            std::cout << "Day " << day << " not solved yet or invalid" << std::endl;
     }
     return 0;
 }
