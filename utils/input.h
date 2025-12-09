@@ -19,3 +19,14 @@ std::vector<T> split_convert(std::string s, std::string regex, std::function<T(c
     }
     return result;
 }
+
+template<typename T>
+std::vector<T> read_input(std::string file_name, std::function<T(const std::string&)> converter) {
+    std::vector<T> result;
+    std::vector<std::string> buffer;
+    read_file(file_name, buffer);
+    for(std::string line : buffer) {
+        result.push_back(converter(line));
+    }
+    return result;
+}
